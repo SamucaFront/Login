@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritório de Advocacia</title>
+    <link rel="stylesheet" href="adv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="fade-in-on-scroll">
+        <div class="container">
+            <h1>Escritório de Advocacia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-background fade-in-on-scroll">
+        <div class="container">
+            <h2>Fale conosco</h2>
+            <p>Preencha o formulário ou entre em contato diretamente pelos canais abaixo.</p>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in-on-scroll">
+        <div class="container">
+            <h2>Sobre o Advogado</h2>
+            <p>Advogado recém-formado com sólida base acadêmica em Direito, com especialização em Direito Civil e Processo Civil. Experiência prática adquirida durante estágios em escritórios de advocacia, onde participei da elaboração de petições, acompanhamento de processos judiciais e atendimento a clientes. Possuo habilidades de negociação, análise jurídica e excelente capacidade de comunicação. Motivado a aplicar conhecimentos teóricos em práticas jurídicas e contribuir para a resolução eficaz de conflitos.</p>
+        </div>
+    </section>
+
+    <section id="services" class="fade-in-on-scroll">
+        <div class="container">
+            <h2>Serviços Oferecidos</h2>
+            <div class="service">
+                <i class="fas fa-gavel"></i>
+                <h3>Consultoria Jurídica</h3>
+                <p>Ofereço orientação jurídica estratégica e personalizada para pessoas físicas e jurídicas, com foco em soluções eficientes e seguras para questões legais, sempre alinhadas às melhores práticas do Direito.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Representação Legal</h3>
+                <p>Atuo na defesa de interesses dos clientes em processos judiciais e administrativos, utilizando abordagens táticas para obter os melhores resultados, sempre comprometido com a ética e a justiça.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-file-contract"></i>
+                <h3>Redação de Contratos</h3>
+                <p>Especializado na elaboração e revisão de contratos, assegurando que os documentos sejam juridicamente sólidos, claros e que protejam adequadamente os direitos e obrigações de todas as partes envolvidas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in-on-scroll">
+        <div class="container">
+            <h2>Envie uma mensagem</h2>
+            <p>Entre em contato conosco para agendar uma consulta ou para mais informações.</p>
+            <address>
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    <form>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Concordo expressamente com a coleta dos dados, como previsto em nossa Política de Privacidade.</label>
+                    </form> 
+                    <div>
+                        <button class="shadow__btn">Enviar</button>
+                    </div>   
+                </div>
+                
+                <h2>Nos siga nas nossas redes sociais</h2>
+
+                <div>
+                    <button class="botao-novo instagram" onclick="window.location.href='https://www.instagram.com'">Instagram</button>
+                    <button class="botao-novo facebook" onclick="window.location.href='https://www.facebook.com'">Facebook</button>
+                    <button class="botao-novo whatsapp" onclick="window.location.href='https://www.whatsapp.com'">WhatsApp</button>
+                    <button class="botao-novo linkedin" onclick="window.location.href='https://www.linkedin.com'">LinkedIn</button>
+                </div>
+
+                <h2>Como Chegar?</h2>
+                <div class="localizacao fade-in-on-scroll">
+                    <p><i class="fas fa-phone"></i> Telefone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Localização: Rua Exemplo, 123, Cidade, Estado</p>
+                </div>
+                <div class="mapa fade-in-on-scroll">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.4194153847331!3d37.77492927975911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a8c123456%3A0x1234567890abcdef!2sRua%20Exemplo%2C%20123%2C%20Cidade%2C%20Estado!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                
+            </address>
+        </div>
+    </section>
+
+    <footer class="fade-in-on-scroll">
+        <div class="container">
+            <p>&copy; 2024 Samuel Reges Costa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Adicionando o efeito de fade-in ao rolar a página
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(function(element) {
+                const position = element.getBoundingClientRect().top;
+
+                if (position - windowHeight <= 0) {
+                    element.classList.add('appear');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
