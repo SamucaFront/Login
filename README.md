@@ -20,5 +20,5 @@ Este projeto é um sistema de login simples desenvolvido com HTML e CSS.
 
    ## Captura de Tela
 
-[Tela de Login](![Captura de tela 2024-10-05 161438](https://github.com/user-attachments/assets/bb7d1d49-9866-4e37-9fc6-78ad67795e8c)
+Tela de Login(![Captura de tela 2024-10-05 161438](https://github.com/user-attachments/assets/bb7d1d49-9866-4e37-9fc6-78ad67795e8c)
 )
